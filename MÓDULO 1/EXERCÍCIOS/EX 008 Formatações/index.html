@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização de texto</title>
+
+    <!--Aqui eu estaria criando uma tag para que toda tag semântica mark seja da cor que escolhi por estilização CSS-->
+    <style>
+        mark {
+            background-color:rgb(139, 151, 253);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Principais formatações</h1>
+    <hr>
+
+    <h2>Negrito</h2>
+    <p>Nesta frase temos um <b>texto em negrito</b> não semântico pela tag b.</p>
+    <p>Nesta frase temos um <strong>texto em negrito</strong> semântico com a tag strong.</p>
+   
+    <h2>Itálico</h2>
+    <p>Nesta frase temos um <i>texto em itálico</i> não semântico com a tag i.</p>
+    <!--Aqui, usamos o conjunto CTRL+SHIFT+P para envelopar o texto "texto em itálico"-->
+    <p>Nesta frase temos um <em>texto com ênfase/itálico</em> semântico com a tag EM.</p>
+    
+    <h2>Texto marcado</h2>
+    <!--Adicionando um parâmetro de CSS (style) na tag para alterando a cor do marcador-->
+    <p>Gerando um <mark style="background-color: rgb(139, 151, 253);">texto marcado</mark> com a tag MARK</p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Aqui eu fiz um <big>texto grande</big> e um <small>texto pequeno</small></p>
+    <!--big está obsoleto, small não-->
+
+    <h2>Texto deletado</h2>
+    <p>Marcando um <del>texto excluído </del>que pode ser lido mas não deve ser considerado, é semântico.</p>
+
+    <h2>Texto inserido</h2>
+    <p>Marcando um <ins>texto inserido</ins> para dar a ênfase que de que foi adicionado, é semântico.</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Coisas do tipo x<sup>2</sup></p>
+
+    <h2>Texto subescrito</h2>
+    <p>Ou coisas tipo H<sub>2</sub>O</p>
+
+</body>
+
+</html>

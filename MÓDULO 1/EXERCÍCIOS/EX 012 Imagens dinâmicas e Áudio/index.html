@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    
+    <h1>Imagens Dinâmicas</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Foto de um G de 1000px">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+
+    <h2>Método 1</h2>
+    <p>(Áudio sombrio do youtube)</p>
+    
+    <audio src="midia/dead-forest-brian-bolger.mp3" controls></audio>
+
+    <h2>Método 2</h2>
+    <p>(Podcast do Guanabara)</p>
+
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">        
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reporoduzir o áudio. <a href="midia/guanacast-33.mp3" target="_blank" download="guanacast-33.mp3">Clique aqui</a> para baixar o arquivo mp3.</p>
+    </audio>
+    
+    <audio src="midia/dead-forest-brian-bolger.mp3" controls autoplay loop></audio>
+
+    <!--Prestar atenção no formato do arquivo para definir o "type". Pode colocar arquivos de vários formatos, pois se o navegador não conseguir tocar um, irá tentar o próximo-->
+
+   
+</body>
+</html>
