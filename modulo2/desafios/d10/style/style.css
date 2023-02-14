@@ -10,6 +10,12 @@
     src: url(fontes/IBMPlexSerif-Medium.ttf);
 }
 
+@media screen and (max-width: 600px) {
+    #quadro ul {
+        columns: 1;
+    }
+}
+
 :root {
     --cor0: #E9F4F3;
     --cor1: #BEDBDA;
@@ -113,9 +119,9 @@ article>h2 {
 }
 
 article {
-    display: inline-block;
-    margin: 0px;
-    min-width: 280px;
+    display: block;
+    margin: auto;
+    min-width: 320px;
     max-width: 900px;
     padding: 30px;
     border: 1px solid var(--cor3);
@@ -173,10 +179,8 @@ main a {
 }
 
 aside {
-    display: inline-block;
-    min-width: none;
-    position: absolute;
-    max-width: 400px;
+    min-width: 800;
+    max-width: 800px;
     background-color: var(--cor0);
     border-radius: 20px;
     padding: 30px;
