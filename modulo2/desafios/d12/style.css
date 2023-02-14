@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;700&display=swap');
+
+:root {
+    --fonte-texto: 'Roboto Mono', monospace;
+}
+
+*{
+    margin: 0;
+}
+
+html, body {
+    background-color: darkolivegreen;
+    min-height: 100vh;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    font-weight: lighter;
+}
+
+header {
+    background-image: linear-gradient(to bottom, black, darkolivegreen);
+    min-height: 200px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-variant: small-caps;
+    font-size: 9vh;
+}
+header p {
+    color: white;
+    text-align: center;
+    padding: 0px 10px 50px 10px;
+    font-size: 3vh;
+    
+}
+main section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10px;
+    font-size: 4vh;
+    line-height: 2em;
+    text-align: left;
+}
+
+section p {
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.imagem {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 90%;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.563);
+}
+
+.imagem p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.367);
+    color: white;
+    padding: 5px;
+    padding-left: 1em;
+    text-shadow: 1px 1px 0px black;
+}
+
+#primeira {
+    background-image: url(imagens/background001.jpg);
+}
+
+#segunda {
+    background-image: url(imagens/background002.jpg);
+}
+
+aside {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    padding: 30px;
+}
+footer {
+    background-color: black;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    background-color: white;
+    color: black;
+    padding: 1px;
+    border-radius: 5px;
+}
