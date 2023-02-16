@@ -30,7 +30,7 @@ header h1 {
     text-align: center;
     padding: 40px;
     font-variant: small-caps;
-    font-size: 9vh;
+    font-size: 8vh;
 }
 header p {
     color: white;
@@ -102,6 +102,6 @@ footer a {
 footer a:hover {
     background-color: white;
     color: black;
-    padding: 1px;
-    border-radius: 5px;
+    outline: 2px solid white;
+    border-radius: 5px;   
 }
