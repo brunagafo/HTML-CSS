@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            padding: 10px;
+            text-align: center;
+        }
+
+        table {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            vertical-align: middle; /*por padrão é middle*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Alinhamento</h1>
+    <!--
+        HIERARQUIA DE TABELAS SIMPLES
+        TABLE = Tabela
+            ROW = Linha de tabela   
+                TABLE HEADER = Cabeçalho de tabela
+                TABLE DATA = dado de tabela
+    -->
+
+    <table>
+        <tr> <!-- Primeira linha--> <!--Fechamento de tags tr e td não obrigatório-->
+            <td>A1
+            <td>B1
+            <td>C1
+        
+        <tr>  <!-- Segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>  <!-- Terceira linha-->
+            <td>A3</td> 
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>  <!-- Quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
