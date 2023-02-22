@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isolando colunas</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1 {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        caption {
+            padding: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #cnome, #cidade  {
+            background-color: lightblue;
+        }
+        #csexo, #cprofissao{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+
+    <table>
+        <colgroup>
+        <col id="cnome">
+        <col id="csexo">
+        <col id="cidade">
+        <col id="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Farmacêutico</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>F</td>
+            <td>51</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Ana Carolina</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Luciano</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Mecânico</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Farmacêutica</td>
+        </tr>
+    </table>
+</body>
+</html>
