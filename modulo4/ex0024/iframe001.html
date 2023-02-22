@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        p {
+            padding: 20px;
+            border: 1px solid black;
+        }
+        /*iframe {      O IFRAME DO CSS É SOBERANO
+            width: 400px;
+            height: 400px;
+        }*/
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de iframe</h1>
+    <p>Acesssando o site do 
+        
+        <!-- Tamanho padrão de 300x150px-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0">
+            [Seu navegadoro não é compatível com esse conteúdo]
+        </iframe>
+
+        para aprender HTML e CSS.</p>
+
+        <p>O site do 
+            <!---frameborder="0" pode até ser retirado e colocado como border no CSS-->
+            <iframe src="https://www.google.com" frameborder="0">
+                <!--[Seu navegadoro não é compatível com esse conteúdo] OU:-->
+                <a href="https://www.google.com">Google</a>
+            </iframe> 
+            também é muito legal.
+        </p>
+
+        <p>Alguns sites recusam o iframe por questão de segurança, principalmente, como o Google acima.</p>
+
+        <p>O meu repositório já funciona. E está com tamanho personalizado.
+            <iframe src="https://brunagafo.github.io" frameborder="0" height="400px" width="600px">
+            [Seu navegadoro não é compatível com esse conteúdo]
+            </iframe> 
+        </p>
+</body>
+</html>
