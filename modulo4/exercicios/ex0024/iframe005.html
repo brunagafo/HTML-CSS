@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - iframe</title>
+    <style>
+            main {
+        margin: auto;
+        max-width: 900px;
+        text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Minha página</h1>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit in incidunt dicta ut optio excepturi voluptas sint assumenda quos, architecto explicabo aliquid officia exercitationem accusantium adipisci laudantium voluptatum dolorum. Minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque quaerat quod incidunt dolor rerum earum rem optio! Quasi ab voluptate sequi ducimus nam repellat dolore velit maxime saepe molestiae. </p>
+        <iframe src="pag-extras/pag004.html" referrerpolicy="no-referrer" sandbox="sandbox"></iframe>
+        <!--O script pode ser malicioso!-->
+        <!-- referrerpolicy="no-referrer" sandbox="sandbox" bloqueia inclusive scripts -->
+        <!--Podemos utilizar sandobox=allow-scripts  -->
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit in incidunt dicta ut optio excepturi voluptas sint assumenda quos, architecto explicabo aliquid officia exercitationem accusantium adipisci laudantium voluptatum dolorum. Minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque quaerat quod incidunt dolor rerum earum rem optio! Quasi ab voluptate sequi ducimus nam repellat dolore velit maxime saepe molestiae. </p>
+    </main>
+</body>
+</html>
