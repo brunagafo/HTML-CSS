@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 500px) {
+@media (max-width: 630px) {
     #ref {
         display: none;
     }
@@ -10,8 +10,13 @@
     }
     #redes-sociais>a>img {
         width: 36px;
-        margin: 6px;
-        margin-bottom: 50px;
+        margin: 0px 8px 50px 5px;
+    }
+}
+
+@media (max-height: 730px) {
+    #ref {
+        display: none;
     }
 }
 
