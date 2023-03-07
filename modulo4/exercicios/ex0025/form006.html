@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1, div {
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.8em;
+        }
+        fieldset {
+            width: fit-content;
+            margin: auto;
+        }
+        #limpar, #enviar {
+            padding: 6px 10px;
+            margin: 0px 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Color, Range e File</h1>
+    
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Configurações</legend>
+            <div>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#00f0f0">
+            </div>
+            <div>
+                <label for="inivel"></label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5">
+            </div>
+            <div>
+                <label for="ifoto">Foto: </label>
+                <input type="file" name="foto" id="ifoto">
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar" id="enviar">
+            <input type="reset" value="Limpar" id="limpar">
+        </div>
+    </form>
+    
+</body>
+</html>
