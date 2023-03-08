@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-ber">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 300px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        div {
+            text-align: center;
+            padding: 10px;
+        }
+        #iano {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Output em Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <div>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" value="2000" required oninput="iidade.innerHTML = Number(2023) - Number(iano.value)">
+        </div>
+
+        <div>
+            <label for="iidade">Sua idade é: </label>
+            <output name="idade" id="iidade">23</output>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
